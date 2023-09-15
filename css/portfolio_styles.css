@@ -1,0 +1,129 @@
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+  --picton-blue: #35b2ee;
+  --heliotrope: #c86ef6;
+  --arapawa: #1d0a68;
+  --royal-blue: #2f7eee;
+  --whisper: #f3f4f9;
+  --purple-heart: #521ec7;
+}
+
+*, *::before, *::after {
+  boxing-size: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer > p {
+  margin: 2rem;
+  font-size: 10px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: right;
+  padding: 2rem;
+  background-color: var(--purple-heart);
+  border-top: 4px solid var(--heliotrope);
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 2rem;
+  line-height: 1.4;
+  color: var(--whisper);
+  text-align: center;
+}
+
+html {
+  boxing-size: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: var(--heliotrope);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: var(--whisper);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: var(--whisper);
+  color: var(--heliotrope);
+}
+
+main {
+  margin-top: 52px;
+}
+
+#welcome-section {
+  background-color: var(--purple-heart);
+  padding: 200px;
+}
+
+#welcome-section > p {
+  color: var(--heliotrope);
+}
+
+#projects-section {
+  background-color: var(--picton-blue);
+  padding: 200px;
+}
+
+#contact-info-section {
+  background-color: var(--purple-heart);
+  padding: 200px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 5vw);
+  grid-gap: 15px; 
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
